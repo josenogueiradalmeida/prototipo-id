@@ -1,0 +1,61 @@
+    <!-- Bootstrap core CSS -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+<script lang="javascript">
+function ecnpj() {
+  let mensagem = document.getElementById("mensagem")  
+  if ( mensagem.textContent == "") {
+    alert("Insira seu token E-CNPJ")    
+    mensagem.textContent = "Associação feita com sucesso!"  
+  } else 
+    mensagem.textContent = ""
+}
+
+function associarGovBr() {
+  let imagem = document.getElementById('govbr');
+  if ( imagem.style.visibility == 'visible' )
+    imagem.style.visibility = 'hidden';
+  else
+    imagem.style.visibility = 'visible';
+}
+</script>
+
+<body class="bg-light">  
+  <div class="container">
+    <div class="py-5 text-center">
+      <a href="index.html"><img class="d-block mx-auto mb-4" src="img/BNDES.jpg" alt="" width="20%"></a>
+      Ligar Conta Blockchain à Empresa
+    </div>
+
+    <div class="row">
+      <div class="col-md-2"></div>
+      <div class="col-md-2"></div>
+      <div class="col-md-4"><input type="text" class="form-control" id="conta" readonly value="0x02525ddbda7e0eca3b69846246766c96fb2f9cff"></div>
+      <div class="col-md-5"></div>      
+    </div>          
+    <div class="row">      
+      &nbsp;
+    </div>    
+    <div class="row">      
+      <div class="col-md-3"></div>
+      <div class="col-md-1"><img src="img/selo-certificado.png" width="80%"> </div>      
+      <div class="col-md-4"><button type="button" class="btn btn-primary btn-sm btn-block" onclick="ecnpj()">Associar Conta Blockchain ao E-CNPJ</button></div>
+      <div class="col-md-4"></div>
+    </div>        
+    <div class="row">      
+      &nbsp;
+    </div>
+    <div class="row">      
+      <div class="col-md-3"></div>
+      <div class="col-md-1"><img src="img/selo-certificado-nuvem.png" width="80%"> </div>
+      <div class="col-md-4"><button type="button" class="btn btn-primary btn-sm btn-block" onclick="associarGovBr()">Associar Conta Blockchain ao Login Gov.br</button></div>
+      <div class="col-md-4"></div>
+    </div>    
+    <hr class="mb-4">    
+    <div class="row">      
+      <div class="col-md-4"></div>
+      <div class="col-md-4"><div class="text-center" id="mensagem"><img src='img/govbr_original_transparente.png' id="govbr" style="display:none;"></img></div></div>    
+      <div class="col-md-4"></div>
+    </div>    
+  </div>
+</body>

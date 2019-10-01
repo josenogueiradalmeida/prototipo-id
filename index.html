@@ -1,0 +1,45 @@
+<html>
+<!-- Bootstrap core CSS -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+<script lang="javascript">
+function autoCompletarMock() {  
+  let palavras = document.getElementById("palavras")  
+  if (palavras.value.length == 2)
+  palavras.value ="shuffle two domain tower rack funny battle trick exist photo outside reject"
+  
+}
+</script>
+
+<body class="bg-light">  
+  <div class="container">
+    <div class="py-5 text-center">
+      <a href="index.html"><img class="d-block mx-auto mb-4" src="img/BNDES.jpg" alt="" width="20%"></a>
+      Identificação Inicial
+    </div>
+    <hr class="mb-4">
+      
+    <div class="row">
+      <div class="col-md-12">Insira as doze palavras da sua conta Blockchain já existente</div>
+    </div>
+    <div class="row">      
+      <div class="col-md-12"><input type="text" class="form-control" id="palavras" oninput="autoCompletarMock()" ></div>
+    </div>
+    <div class="row">
+      <div class="col-md-12"></br></div>
+    </div>    
+    <div class="row">
+      <div class="col-md-3"></div>
+      <div class="col-md-1"> </div>
+      <div class="col-md-4"><a href="associar.html" class="btn btn-primary btn-sm btn-block">Entrar</a></div>
+      <div class="col-md-4"></div>
+    </div>     
+    <hr class="mb-4">    
+    <div class="row">
+      <div class="col-md-4"></div>      
+      <div class="col-md-4"><a href="cadastro.html" class="btn btn-primary btn-sm btn-block">Criar Conta Blockchain</a></div>
+      <div class="col-md-4"></div>
+    </div>    
+  </div>
+</body>
+</html>

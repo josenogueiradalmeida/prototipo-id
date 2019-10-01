@@ -1,0 +1,53 @@
+<html>
+<!-- Bootstrap core CSS -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+<script lang="javascript">
+function gerarConta() {
+  let conta = document.getElementById("conta")
+  let palavras = document.getElementById("palavras")
+  if ( conta.value == "") {
+    conta.value ="0x02525ddbda7e0eca3b69846246766c96fb2f9cff";  
+    palavras.value ="shuffle two domain tower rack funny battle trick exist photo outside reject"
+  } else {
+    conta.value ="";  
+    palavras.value =""
+  }
+  
+}
+</script>
+
+<body class="bg-light">  
+  <div class="container">
+    <div class="py-5 text-center">
+      <a href="index.html"><img class="d-block mx-auto mb-4" src="img/BNDES.jpg" alt="" width="20%"></a>
+      Cadastro da Conta Blockchain
+    </div>
+    <hr class="mb-4">
+    <div class="row">
+      <div class="col-md-2">Criar Conta Blockchain</div>
+      <div class="col-md-1"><button type="button" class="btn btn-success btn-sm btn-block" onclick="gerarConta()">Gerar</button></div>
+      <div class="col-md-5"><input type="text" class="form-control" id="conta" readonly></div>
+      <div class="col-md-4"></div>
+    </div>          
+    <div class="row">
+      &nbsp;<br>
+      <div class="col-md-12">Guarde num local seguro as doze palavras abaixo para caso precise recuperar sua conta Blockchain</div>
+      <div class="col-md-12"><input type="text" class="form-control" id="palavras" readonly></div>
+    </br>
+    </div>
+    <div class="row">
+      </br>            
+    </div>    
+    <div class="row">
+      <div class="col-md-4"></div>      
+      <div class="col-md-4"><a href="associar.html" class="btn btn-primary btn-sm btn-block">Ver Opções para Associar Conta Blockchain</a></div>
+      <div class="col-md-4"></div>
+    </div>    
+    <hr class="mb-4">    
+    <div class="row">      
+      <div class="col-md-5"></div>    
+    </div>    
+  </div>
+</body>
+</html>
